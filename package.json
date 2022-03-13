@@ -1,7 +1,6 @@
 {
   "name": "red-moon",
   "version": "0.1.0",
-  "homepage": "http://github.com/EiJey11/Webramverk_2022.git",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
