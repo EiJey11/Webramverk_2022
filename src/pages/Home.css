@@ -1,0 +1,146 @@
+/* Layout */
+
+.container_homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url('./pexels-cottonbro-5483064.jpg');
+  background-size: cover;
+}
+
+.homepage_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Modal window */
+
+.modal_wrapper {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2) ;
+  backdrop-filter: blur(10px);
+}
+
+.modal_wrapper.open {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.modal_wrapper.close {
+  height: 0;
+  display: none;
+}
+
+.modal_body {
+  min-width: 500px;
+  margin: 200px auto;
+  background-color: azure;
+  margin-top: 7%;
+  padding: 40px 20px;
+  border-radius: 10px;
+  max-height: 100%;
+  overflow-y: scroll;
+}
+
+.modal_body::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.modal_body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.modal_close {
+  text-align: right;
+  padding: 0 10px 0 0;
+  margin-top: -15px;
+  font-size: 24px;
+  color: #d35e56;
+  cursor: pointer;
+}
+
+.modal_body h2{
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  color: #d35e56;
+  font-size: 36px;
+}
+
+.login_btn {
+  padding: 15px 32px;
+  background-color: #d35e56;
+  border: none;
+  color: azure;
+  border-radius: 6px;
+  margin-top: 65px;
+  font-weight: bold;
+}
+
+.login_btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 14px 31px;
+  border: #d35e56 1px solid;
+  color: rgb(217, 226, 226);
+
+}
+
+/* Login Form */
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  color: #d35e56;
+}
+
+input {
+  margin-top: 15px;
+  padding: 15px 20px;
+  border: none;
+  background-color: #F2F2F2;
+  border-radius: 6px;
+}
+
+.form_btn {
+  margin-top: 35px;
+  align-self: center;
+  padding: 15px 85px;
+  background-color: #d35e56;
+  border-top: 1px solid #d35e56;
+  border: none;
+  color: azure;
+  border-radius: 6px;
+}
+
+.form_btn:hover {
+  border: #d35e56 1px solid;
+  background-color: #fff;
+  color: #d35e56;
+}
+
+hr {
+  border: 0; 
+  border-top: 1px solid #d35e56;
+  width: 50%;
+}
+
+::placeholder {
+ color: #999999;
+}
