@@ -12,9 +12,10 @@
 .about_content {
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: absolute;
     background-color: #fff;
-    padding: 55px;
+    padding: 60px 80px 130px 80px;
     width: 30%;
 }
 

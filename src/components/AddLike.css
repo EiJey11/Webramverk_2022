@@ -1,0 +1,16 @@
+.likes_container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    bottom: 0;
+    right: 20%;
+}
+
+.like_btn {
+    background: white;
+    padding: 7px 0;
+    border: 1px #D35E56 solid;
+    border-radius: 4px;
+}

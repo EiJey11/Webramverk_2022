@@ -1,14 +1,20 @@
 import './About.css'
+import { AddLike } from '../components/AddLike'
 
 const About = () => {
     return (
         <div className='container_about'>
             <div className="about_content">
                 <h1>About us</h1>
-                <p>First, we take the time to get to know you, your business, and your objectives. We then decide together the optimal approach for your project. The best strategy takes into consideration your past performance, present available resources, and future growth potential. 
-                <br />
-                <br />
-                Whether you are looking to provide a presentation of your business, sell your products and services online, improve your workflow with a custom application, or build the next big thing, our web development services will help you turn your ideas into reality.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+                quia.</p>
+                <AddLike />
             </div>
         </div>
     )

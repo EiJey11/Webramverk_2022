@@ -11,8 +11,6 @@ const Layout = () => {
             </header>
 
             <Outlet />
-
-            <footer>Stockholm @ RED-Moon.se</footer>
         </>
     )
 }

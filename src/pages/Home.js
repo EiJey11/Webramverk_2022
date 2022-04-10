@@ -4,16 +4,17 @@ import { useState } from 'react'
 
 const Home = () => {
 
-    const[modal, setModal] = useState({
+    const[modal, setModalWindow] = useState({
         title: false,
     })
 
-    const [name, setName] = useState('');
-    const [password, setPassword] = useState('');
+    const [name, setUserName] = useState('');
+    const [password, setUserPassword] = useState('');
 
     const submit = (e) => {
     e.preventDefault();
     console.log(name, password);
+    alert('Du är inloggad!')
   };
 
     return (
@@ -21,17 +22,17 @@ const Home = () => {
             <div className="homepage_content">
                 <h1>RED-Moon</h1>
                 <h3>This is a RED-Moon web studio homepage.</h3>
-                <button className='login_btn' onClick={() =>setModal({title: true})}>LOGIN</button>
+                <button className='login_btn' onClick={() =>setModalWindow({title: true})}>LOGIN</button>
                 <Modal
                     title ={'Login'}
                     isOpened = {modal.title}
-                    onModalClose = {() => setModal({title:false})}
+                    onModalClose = {() => setModalWindow({title:false})}
                 >
                     <form className='form_container' onSubmit={submit}>
                         <label>
                             <input
                             value={name}
-                            onChange={event => setName(event.target.value)}
+                            onChange={event => setUserName(event.target.value)}
                             placeholder="Login"
                             name="name"
                             type="text"
@@ -40,7 +41,7 @@ const Home = () => {
                             <label>
                             <input
                             value={password}
-                            onChange={event => setPassword(event.target.value)}
+                            onChange={event => setUserPassword(event.target.value)}
                             placeholder="Password"
                             name="password"
                             type="password"
